@@ -52,6 +52,7 @@ bool dfs (int x, int c) {
         char childW = w[x][i];
         char childPop = pop[x][i];
         char childPush = push[x][i];
+        cout << s[c] << '\n';
         if ((childW == '#' || childW == s[c]) && (childPop == '#' || memory.back() == childPop)) {
             if (childPop != '#') memory.pop_back();
             if (childPush != '#') memory.push_back(childPush);
